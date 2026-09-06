@@ -104,12 +104,7 @@ change (see `SETUP.md` → "Connecting the frontend to the real backend"), not a
 
 See `frontend/.env.example` and `backend/.env.example`. Never commit a real `.env` file.
 
-## 8–12. Setup, running, demo accounts, deployment
-
-**All of this lives in [`SETUP.md`](./SETUP.md)**, written as an ordered, copy-pasteable walkthrough
-so it doesn't duplicate (and drift from) this overview.
-
-## 13. Future improvements
+## 8. Future improvements
 
 - Replace the linear wait-time formula with a trained ML model (the function signature in
   `waitEstimate.js` / a future `predict_wait()` backend service is already shaped for this swap).
