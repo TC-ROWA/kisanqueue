@@ -88,11 +88,7 @@ kisanqueue/
 
 ## 6. Folder structure — see section 5 above.
 
-## 7. Environment variables
-
-See `frontend/.env.example` and `backend/.env.example`.
-
-## 8. Future improvements
+## 7. Future improvements
 
 - Replace the linear wait-time formula with a trained ML model (the function signature in
   `waitEstimate.js` / a future `predict_wait()` backend service is already shaped for this swap).
