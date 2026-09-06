@@ -26,11 +26,6 @@ This repository contains:
   auth against Supabase, and working endpoints for the core farmer/operator/admin flows.
 - **`supabase/`** — the full PostgreSQL schema (`schema.sql`) with Row Level Security policies, plus
   demo seed data (`seed.sql`).
-
-👉 **New to this project? Start with [`SETUP.md`](./SETUP.md)** — a step-by-step guide that takes you
-from zero to a fully running app (frontend, backend, and Supabase database) with no assumed prior
-setup, plus a troubleshooting section for the errors people hit most often.
-
 ---
 
 ## 2. Problem statement
@@ -65,9 +60,6 @@ PWA installability, and loading/empty/error states on every page.
 | Database / Auth / Realtime / Storage | Supabase (PostgreSQL, Auth, Realtime, Storage) |
 | Deployment | Frontend → Vercel · Backend → Render/Railway · Database → Supabase |
 
-No Docker, Kubernetes, Kafka, RabbitMQ, Redis, or Celery — this is intentionally a modular monolith
-that runs comfortably on a normal laptop.
-
 ## 5. Architecture
 
 ```
@@ -94,15 +86,11 @@ kisanqueue/
     └── seed.sql                # demo data
 ```
 
-The frontend never talks to `mockData.js` directly outside of `api.js` — every page calls a function
-like `getCentres()` or `createBooking()`. That means connecting the real backend later is a one-file
-change (see `SETUP.md` → "Connecting the frontend to the real backend"), not a rewrite.
-
 ## 6. Folder structure — see section 5 above.
 
 ## 7. Environment variables
 
-See `frontend/.env.example` and `backend/.env.example`. Never commit a real `.env` file.
+See `frontend/.env.example` and `backend/.env.example`.
 
 ## 8. Future improvements
 
